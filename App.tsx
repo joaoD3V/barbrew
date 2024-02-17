@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  useFonts,
+  Poppins_400Regular,
+  Poppins_600SemiBold,
+} from '@expo-google-fonts/poppins';
+import { StatusBar } from 'react-native';
+import { Provider as ReduxProvider } from 'react-redux';
+import { Loading } from '@/components/Loading';
+import { Routes } from '@/routes';
+import { store } from '@/store';
 
 export default function App() {
+  const [fontsLoaded, fontError] = useFonts({
+    Poppins_400Regular,
+    Poppins_600SemiBold,
+  });
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ReduxProvider store={store}>
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      {!fontsLoaded && !fontError ? <Loading /> : <Routes />}
+    </ReduxProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
