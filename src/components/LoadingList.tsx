@@ -1,8 +1,8 @@
 import { ActivityIndicator, View } from 'react-native';
 
-export function ListFooter() {
+export function LoadingList() {
   return (
-    <View className="flex-1 items-center justify-center mt-6">
+    <View className="flex-1 items-center justify-center mt-8">
       <ActivityIndicator size={64} color="#F4C314" />
     </View>
   );

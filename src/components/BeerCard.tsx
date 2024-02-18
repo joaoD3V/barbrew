@@ -11,12 +11,10 @@ type BeerCriteria = {
 };
 
 type BeerCardProps = {
-  cardWidth: number;
-  index: number;
   beer: Beer;
 };
 
-export function BeerCard({ cardWidth, index, beer }: BeerCardProps) {
+export function BeerCard({ beer }: BeerCardProps) {
   function isGoodBeer(criteria: BeerCriteria): boolean {
     const acceptableRanges = {
       abv: { min: 4, max: 6 }, // Aceita ABV entre 4% e 6%
@@ -38,26 +36,29 @@ export function BeerCard({ cardWidth, index, beer }: BeerCardProps) {
   const isGood = isGoodBeer(beer);
 
   return (
-    <View
-      style={{ width: cardWidth, marginRight: index % 2 === 0 ? 'auto' : 0 }}
-      className="h-[240px] bg-yellow-beer rounded-[20px] p-3 flex items-center justify-between border border-black relative"
-    >
-      <Image
-        className="w-4/5 h-4/5"
-        resizeMode="contain"
-        source={{ uri: beer.image_url }}
-      />
+    <View className="w-full h-[240px] bg-yellow-beer rounded-[20px] py-3 px-4 flex flex-row items-center border border-black relative">
+      {beer.image_url && (
+        <Image
+          className="w-32 h-full"
+          resizeMode="contain"
+          source={{ uri: beer.image_url }}
+        />
+      )}
 
-      <View className="flex-1 max-w-full max-h-full items-center justify-center">
-        <Text className="font-heading text-sm leading-5 text-center overflow-hidden">
-          {beer.name.replace(' - ', ' ')}
+      <View className="flex-1 max-w-full h-full items-center justify-center gap-2">
+        <Text className="font-heading text-lg leading-5 text-center">
+          {beer.name}
+        </Text>
+
+        <Text className="text-xs leading-tight text-center" numberOfLines={4}>
+          {beer.description}
         </Text>
       </View>
 
       {isGood && (
         <Image
           source={logoImg}
-          className="absolute left-1 top-2 w-10 h-10 "
+          className="absolute right-4 top-4 w-10 h-10 "
           resizeMode="contain"
         />
       )}
