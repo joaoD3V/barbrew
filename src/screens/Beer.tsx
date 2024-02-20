@@ -26,23 +26,25 @@ export function Beer() {
     <SafeAreaView className="flex-col w-full bg-yellow-beer flex-1 relative">
       <View className="flex-col px-5 py-8 w-full">
         <TouchableOpacity onPress={handleGoBack}>
-          <ArrowLeftCircle size={32} className="text-black" strokeWidth={1.5} />
+          <ArrowLeftCircle size={42} className="text-black" strokeWidth={1.5} />
         </TouchableOpacity>
 
-        <Text className="font-heading text-3xl mt-12 w-1/2 leading-relaxed">
-          {beer.name}
-        </Text>
-      </View>
+        <View className="flex-row items-start justify-between ">
+          <Text className="font-heading text-3xl mt-12 w-1/2 leading-relaxed">
+            {beer.name}
+          </Text>
 
-      <Image
-        className="w-[200px] h-[350px] absolute top-32 right-5 z-10"
-        resizeMode="contain"
-        source={beer.image_url ? { uri: beer.image_url } : logoImg}
-      />
+          <Image
+            className="w-[200px] h-[320px]"
+            resizeMode="contain"
+            source={beer.image_url ? { uri: beer.image_url } : logoImg}
+          />
+        </View>
+      </View>
 
       <View className="absolute h-1/2 flex-col px-5  w-full bottom-0 bg-white-bubble rounded-t-[40px]">
         <ScrollView
-          className="w-full mt-16"
+          className="w-full mt-8"
           showsVerticalScrollIndicator={false}
         >
           <Section title="Description">

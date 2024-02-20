@@ -36,14 +36,6 @@ export function BeerCard({ beer }: BeerCardProps) {
           {beer.description}
         </Text>
       </View>
-
-      {/* {isGood && (
-        <Image
-          source={logoImg}
-          className="absolute right-4 top-4 w-10 h-10 "
-          resizeMode="contain"
-        />
-      )} */}
     </TouchableOpacity>
   );
 }
