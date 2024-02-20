@@ -89,7 +89,6 @@ const beers: Beer[] = [
 const exampleFilteredBeers: BeerState = {
   beers: beers,
   filteredBeers: beers.slice(0, 2),
-  currentBeerIndex: null,
   isLoading: true,
   currentPageBeers: 1,
   currentPageFilteredBeers: 1,
@@ -99,7 +98,6 @@ const exampleFilteredBeers: BeerState = {
 const loadBeerPending: BeerState = {
   beers: beers.slice(0, 2),
   filteredBeers: [],
-  currentBeerIndex: null,
   isLoading: false,
   currentPageBeers: 1,
   currentPageFilteredBeers: 1,
@@ -109,7 +107,6 @@ const loadBeerPending: BeerState = {
 const loadBeerFullfiled: BeerState = {
   beers: beers.slice(0, 2),
   filteredBeers: [],
-  currentBeerIndex: null,
   isLoading: true,
   currentPageBeers: 1,
   currentPageFilteredBeers: 1,
@@ -119,7 +116,6 @@ const loadBeerFullfiled: BeerState = {
 const filteredBeersFullfiled: BeerState = {
   beers,
   filteredBeers: beers.slice(0, 2),
-  currentBeerIndex: null,
   isLoading: true,
   currentPageBeers: 1,
   currentPageFilteredBeers: 1,
@@ -132,6 +128,7 @@ describe('brewery slice', () => {
 
     expect(state.filteredBeers).toHaveLength(0);
     expect(state.currentPageFilteredBeers).toEqual(1);
+    expect(state.endLoad).toBeFalsy();
   });
 
   it('should be able to handle loading and error when loadBeer is pending', () => {

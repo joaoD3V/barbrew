@@ -12,11 +12,11 @@ export type Beer = {
   first_brewed: string;
   description: string;
   image_url: string | null;
-  abv: number;
-  ibu: number;
-  ebc: number;
-  srm: number;
-  ph: number;
+  abv: number | null;
+  ibu: number | null;
+  ebc: number | null;
+  srm: number | null;
+  ph: number | null;
   food_pairing: string[];
   brewers_tips: string;
 };
@@ -24,7 +24,6 @@ export type Beer = {
 export type BeerState = {
   beers: Beer[];
   filteredBeers: Beer[];
-  currentBeerIndex: number | null;
   isLoading: boolean;
   currentPageBeers: number;
   currentPageFilteredBeers: number;
@@ -34,7 +33,6 @@ export type BeerState = {
 const initialState: BeerState = {
   beers: [],
   filteredBeers: [],
-  currentBeerIndex: null,
   isLoading: true,
   currentPageBeers: 1,
   currentPageFilteredBeers: 1,
@@ -86,6 +84,7 @@ export const brewerySlice = createSlice({
     resetFilteredBeersList: (state) => {
       state.filteredBeers = [];
       state.currentPageFilteredBeers = 1;
+      state.endLoad = false;
     },
   },
   extraReducers(builder) {

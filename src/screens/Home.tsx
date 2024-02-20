@@ -2,6 +2,7 @@
 import {
   FlatList,
   Image,
+  Keyboard,
   TextInput,
   TouchableOpacity,
   View,
@@ -45,13 +46,20 @@ export function Home() {
     setBeerName(text);
 
     if (text === '') {
+      Keyboard.dismiss();
       setIsSearch(false);
       dispatch(resetFilteredBeersList());
       scrollToTop();
     }
   }
 
-  function handleSearchBeers() {
+  function handleSearchBeers(reset = false) {
+    Keyboard.dismiss();
+
+    if (reset) {
+      dispatch(resetFilteredBeersList());
+    }
+
     if (beerName === '') {
       return;
     }
@@ -69,13 +77,7 @@ export function Home() {
       />
 
       <View className="w-full flex-row gap-2 mt-8">
-        <TouchableOpacity className="border border-black w-11 h-11 p-1 rounded">
-          <Image
-            source={logoImg}
-            className="w-full h-full"
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
+        <Image source={logoImg} className="w-10 h-10" resizeMode="contain" />
 
         <View className="flex-row flex-1 h-11 border border-black rounded pl-2">
           <TextInput
@@ -85,12 +87,12 @@ export function Home() {
             returnKeyType="search"
             onChangeText={handleBeerName}
             value={beerName}
-            onSubmitEditing={handleSearchBeers}
+            onSubmitEditing={() => handleSearchBeers(true)}
             cursorColor="#F4C314"
           />
           <TouchableOpacity
             className="w-11 h-11 items-center justify-center"
-            onPress={handleSearchBeers}
+            onPress={() => handleSearchBeers(true)}
           >
             <Search className="w-full h-full text-black" />
           </TouchableOpacity>
