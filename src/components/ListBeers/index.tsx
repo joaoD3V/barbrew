@@ -1,7 +1,5 @@
 import { FlatList } from 'react-native';
-import { LoadingList } from './LoadingList';
 import { Beer, PER_PAGE } from '@/store/slices/brewery';
-import { BeerCard } from './BeerCard';
 import {
   ForwardRefRenderFunction,
   RefObject,
@@ -9,7 +7,9 @@ import {
   memo,
   useCallback,
 } from 'react';
-import { EmptyList } from './EmptyList';
+import { LoadingList } from '../LoadingList';
+import { EmptyList } from '../EmptyList';
+import { BeerCard } from '../BeerCard';
 
 type ListBeersProps = {
   ref: RefObject<FlatList<Beer>>;
@@ -54,6 +54,7 @@ const ListBeersBase: ForwardRefRenderFunction<
       ListFooterComponent={
         !endLoad && items.length > 20 ? <LoadingList /> : null
       }
+      testID="flatlist"
     />
   );
 };

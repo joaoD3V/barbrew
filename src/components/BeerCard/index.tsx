@@ -20,11 +20,14 @@ export function BeerCard({ beer }: BeerCardProps) {
     <TouchableOpacity
       onPress={handleShowBeer}
       className="w-full h-[240px] bg-yellow-beer rounded-[20px] py-3 px-4 flex flex-row items-center border border-black relative"
+      testID={`touchable-${beer.id}`}
     >
       <Image
         className="w-32 h-full"
         resizeMode="contain"
         source={beer.image_url ? { uri: beer.image_url } : logoImg}
+        testID="beer-image"
+        accessibilityRole="image"
       />
 
       <View className="flex-1 max-w-full h-full items-center justify-center gap-2">

@@ -1,51 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708298610874" clover="3.2.0">
-  <project timestamp="1708298610874" name="All files">
-    <metrics statements="42" coveredstatements="40" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10" elements="56" coveredelements="54" complexity="0" loc="42" ncloc="42" packages="1" files="1" classes="1"/>
-    <file name="brewery.ts" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/store/slices/brewery.ts">
-      <metrics statements="42" coveredstatements="40" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
-      <line num="49" count="1" type="stmt"/>
-      <line num="50" count="1" type="stmt"/>
-      <line num="54" count="1" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="61" count="1" type="stmt"/>
-      <line num="64" count="1" type="stmt"/>
-      <line num="66" count="1" type="stmt"/>
-      <line num="67" count="1" type="stmt"/>
-      <line num="75" count="1" type="stmt"/>
-      <line num="77" count="0" type="stmt"/>
-      <line num="82" count="1" type="stmt"/>
-      <line num="87" count="1" type="stmt"/>
-      <line num="88" count="1" type="stmt"/>
-      <line num="93" count="1" type="stmt"/>
-      <line num="94" count="1" type="stmt"/>
-      <line num="97" count="1" type="stmt"/>
-      <line num="98" count="2" type="stmt"/>
-      <line num="100" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="101" count="1" type="stmt"/>
-      <line num="102" count="1" type="stmt"/>
-      <line num="103" count="1" type="stmt"/>
-      <line num="105" count="1" type="stmt"/>
-      <line num="109" count="1" type="stmt"/>
-      <line num="110" count="1" type="stmt"/>
-      <line num="114" count="1" type="stmt"/>
-      <line num="115" count="1" type="stmt"/>
-      <line num="118" count="1" type="stmt"/>
-      <line num="119" count="3" type="stmt"/>
-      <line num="121" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="122" count="2" type="stmt"/>
-      <line num="123" count="2" type="stmt"/>
-      <line num="124" count="2" type="stmt"/>
-      <line num="126" count="1" type="stmt"/>
-      <line num="127" count="1" type="stmt"/>
-      <line num="131" count="1" type="stmt"/>
-      <line num="132" count="1" type="stmt"/>
-      <line num="137" count="1" type="stmt"/>
-      <line num="139" count="1" type="stmt"/>
-    </file>
+<coverage generated="1708486121860" clover="3.2.0">
+  <project timestamp="1708486121860" name="All files">
+    <metrics statements="60" coveredstatements="60" conditionals="16" coveredconditionals="16" methods="20" coveredmethods="20" elements="96" coveredelements="96" complexity="0" loc="60" ncloc="60" packages="7" files="7" classes="7"/>
+    <package name="components.BeerCard">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/BeerCard/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="11" count="39" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="39" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.EmptyList">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/EmptyList/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.ListBeers">
+      <metrics statements="10" coveredstatements="10" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/ListBeers/index.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="36" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="36" count="43" type="stmt"/>
+        <line num="46" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Loading">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/Loading/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.LoadingList">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/LoadingList/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Section">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/components/Section/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.slices">
+      <metrics statements="43" coveredstatements="43" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+      <file name="brewery.ts" path="/home/joao/Desktop/Desafio/Garupa/barbrew/src/store/slices/brewery.ts">
+        <metrics statements="43" coveredstatements="43" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="2" type="stmt"/>
+        <line num="99" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="118" count="3" type="stmt"/>
+        <line num="120" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="122" count="2" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="126" count="1" type="stmt"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="136" count="2" type="stmt"/>
+        <line num="138" count="2" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

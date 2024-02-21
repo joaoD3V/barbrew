@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for store/slices/thunks.ts</title>
+    <title>Code coverage report for components/BeerCard/index.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">store/slices</a> thunks.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/BeerCard</a> index.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/12</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/12</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -106,36 +106,26 @@
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
-<a name='L44'></a><a href='#L44'>44</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">39x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -143,55 +133,68 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { api } from '@/lib/axios';
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import { RootState } from '..';
-import { Alert } from 'react-native';
-import { PER_PAGE } from './brewery';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Beer } from '@/store/slices/brewery';
+import { useNavigation } from '@react-navigation/native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
+import logoImg from '@/assets/logo.png';
 &nbsp;
-export const loadBeers = createAsyncThunk(
-  'brewery/fetchBeers',
-  async (_, { getState }) =&gt; {
-    const { currentPageBeers } = (getState() as RootState).brewery;
+type BeerCardProps = {
+  beer: Beer;
+};
 &nbsp;
-    try {
-      const response = await api.get('/beers', {
-        params: { page: currentPageBeers, per_page: PER_PAGE },
-      });
+export function BeerCard({ beer }: BeerCardProps) {
+  const navigation = useNavigation();
 &nbsp;
-      return response.data;
-    } catch {
-<span class="cstat-no" title="statement not covered" >      Alert.alert('Erro', 'Não foi possível carregar a lista.');</span>
-    }
+  function handleShowBeer() {
+    navigation.navigate('beer', {
+      beer,
+    });
   }
-);
 &nbsp;
-export const searchBeers = createAsyncThunk(
-  'brewery/searchBeers',
-  async (beerName: string, { getState }) =&gt; {
-    const { currentPageFilteredBeers } = (getState() as RootState).brewery;
+  return (
+    &lt;TouchableOpacity
+      onPress={handleShowBeer}
+      className="w-full h-[240px] bg-yellow-beer rounded-[20px] py-3 px-4 flex flex-row items-center border border-black relative"
+      testID={`touchable-${beer.id}`}
+    &gt;
+      &lt;Image
+        className="w-32 h-full"
+        resizeMode="contain"
+        source={beer.image_url ? { uri: beer.image_url } : logoImg}
+        testID="beer-image"
+        accessibilityRole="image"
+      /&gt;
 &nbsp;
-    try {
-      const response = await api.get('/beers', {
-        params: {
-          beer_name: beerName,
-          page: currentPageFilteredBeers,
-          per_page: PER_PAGE,
-        },
-      });
+      &lt;View className="flex-1 max-w-full h-full items-center justify-center gap-2"&gt;
+        &lt;Text className="font-heading text-lg leading-5 text-center"&gt;
+          {beer.name}
+        &lt;/Text&gt;
 &nbsp;
-      return response.data;
-    } catch {
-<span class="cstat-no" title="statement not covered" >      Alert.alert('Erro', 'Não foi possível carregar a lista.');</span>
-    }
-  }
-);
+        &lt;Text className="text-xs leading-tight text-center" numberOfLines={4}&gt;
+          {beer.description}
+        &lt;/Text&gt;
+      &lt;/View&gt;
+    &lt;/TouchableOpacity&gt;
+  );
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -199,7 +202,7 @@ export const searchBeers = createAsyncThunk(
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-02-18T22:33:38.231Z
+                at 2024-02-21T03:28:41.846Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -1,4 +1,4 @@
-import { api } from '@/lib/axios';
+import { api } from '@/libs/axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { RootState } from '..';
 import { Alert } from 'react-native';
