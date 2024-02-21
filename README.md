@@ -49,6 +49,20 @@ npm install
 npm run start
 ```
 
+### Para rodar os testes automatizados
+1 - Para rodar todos os testes:
+```
+npm run test
+```
+2 - Para rodar todos os testes em modo watch:
+```
+npm run test:watch
+```
+2 - Para analisar a cobertura dos teste:
+```
+npm run test:coverage
+```
+
 
 ---
 

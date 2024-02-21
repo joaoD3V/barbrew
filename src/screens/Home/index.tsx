@@ -74,6 +74,7 @@ export function Home() {
         source={bannerImg}
         className="w-full h-[190px] rounded-lg"
         resizeMode="stretch"
+        testID="banner"
       />
 
       <View className="w-full flex-row gap-2 mt-8">
@@ -93,6 +94,7 @@ export function Home() {
           <TouchableOpacity
             className="w-11 h-11 items-center justify-center"
             onPress={() => handleSearchBeers(true)}
+            testID="search-button"
           >
             <Search className="w-full h-full text-black" />
           </TouchableOpacity>

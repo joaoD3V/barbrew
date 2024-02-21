@@ -25,7 +25,7 @@ export function Beer() {
   return (
     <SafeAreaView className="flex-col w-full bg-yellow-beer flex-1 relative">
       <View className="flex-col px-5 py-8 w-full">
-        <TouchableOpacity onPress={handleGoBack}>
+        <TouchableOpacity onPress={handleGoBack} testID="go-back">
           <ArrowLeftCircle size={42} className="text-black" strokeWidth={1.5} />
         </TouchableOpacity>
 
@@ -38,6 +38,7 @@ export function Beer() {
             className="w-[200px] h-[320px]"
             resizeMode="contain"
             source={beer.image_url ? { uri: beer.image_url } : logoImg}
+            testID="beer-image"
           />
         </View>
       </View>

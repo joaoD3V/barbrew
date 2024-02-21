@@ -32,7 +32,6 @@ describe('Component: BeerCard', () => {
     expect(img.props.source.uri).toEqual(beers[0].image_url);
 
     expect(screen.getByText('Buzz')).toBeTruthy();
-    expect(screen.getByText('Buzz')).toBeTruthy();
   });
 
   it('should be render BeerCard without beer image', () => {
@@ -44,7 +43,6 @@ describe('Component: BeerCard', () => {
 
     expect(img.props.accessibilityRole).toEqual('image');
     expect(img.props.source).toEqual(logoImg);
-    expect(screen.getByText('Buzz')).toBeTruthy();
     expect(screen.getByText('Buzz')).toBeTruthy();
   });
 
